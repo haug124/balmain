@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-fullbleed",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-04-20T19:32:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://de.balmain.com/de",
+    "originPage": "Balmain Germany homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "collection-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + CTAs",
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "collection landing pages",
+      "campaign hero banners",
+      "full-bleed image banners with overlaid text"
+    ],
+    "notSuitableFor": [
+      "text-only hero sections",
+      "hero sections with inline images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/balmain-home"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-20T19:32:00.000Z"
+  }
+}

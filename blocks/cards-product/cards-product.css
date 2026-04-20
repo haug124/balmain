@@ -1,0 +1,98 @@
+/* Cards Product — Balmain product category cards
+ * 50/50 side-by-side layout with image, subtitle, heading, and CTAs
+ * Also handles no-image info cards (3-column reassurance)
+ */
+
+.cards-product > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.cards-product > ul > li {
+  background-color: var(--background-color);
+  overflow: hidden;
+}
+
+.cards-product .cards-product-card-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.cards-product > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.cards-product > ul > li:hover img {
+  transform: scale(1.03);
+}
+
+.cards-product .cards-product-card-body {
+  padding: 15px 0 0;
+}
+
+.cards-product .cards-product-card-body p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  margin: 0 0 4px;
+  color: var(--text-color);
+}
+
+.cards-product .cards-product-card-body h3 {
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  text-transform: none;
+  margin: 0 0 15px;
+  color: var(--text-color);
+}
+
+.cards-product .cards-product-card-body a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 8px 24px;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  text-decoration: none;
+  transition: var(--button-transition);
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.cards-product .cards-product-card-body a:hover {
+  background-color: var(--text-color);
+  border-color: var(--text-color);
+  color: var(--background-color);
+  opacity: 1;
+}
+
+/* 2-column layout for desktop (50/50 side-by-side cards) */
+@media (width >= 900px) {
+  .cards-product > ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+}
+
+/* 3-column layout when cards have no images (info/reassurance cards) */
+.cards-product > ul > li:not(:has(.cards-product-card-image)) {
+  padding: 0 10px 17px;
+  text-align: left;
+}
+
+@media (width >= 900px) {
+  .cards-product > ul:has(> li:nth-child(3):last-child) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

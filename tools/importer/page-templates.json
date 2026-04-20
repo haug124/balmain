@@ -1,0 +1,104 @@
+{
+  "templates": [
+    {
+      "name": "balmain-homepage",
+      "urls": [
+        "https://de.balmain.com/de"
+      ],
+      "description": "Balmain Germany homepage with hero banners, product category cards, carousels, newsletter signup, and info cards",
+      "blocks": [
+        {
+          "name": "hero-fullbleed",
+          "instances": [
+            ".bal-container.bal-main--slider .bal-slide"
+          ]
+        },
+        {
+          "name": "cards-product",
+          "instances": [
+            ".bal-flexible--layout.style-50-50-rectangle .bal-flexible--content"
+          ]
+        },
+        {
+          "name": "carousel-product",
+          "instances": [
+            "section.carousel_classic",
+            "section.bal-culture"
+          ]
+        },
+        {
+          "name": "form",
+          "instances": [
+            ".experience-component.experience-bal_assets-bal_newslatter_singup .footer_signup"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero SS26",
+          "selector": ".experience-component.experience-bal_layouts-bal_mainslider:first-of-type",
+          "style": null,
+          "blocks": ["hero-fullbleed"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Spring Offers Cards",
+          "selector": ".experience-component.experience-bal_layouts-bal_flexible_layout:first-of-type",
+          "style": null,
+          "blocks": ["cards-product"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Product Carousel",
+          "selector": ".experience-component.experience-bal_layouts-bal_carousel_classic",
+          "style": null,
+          "blocks": ["carousel-product"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Sneakers and Mens Cards",
+          "selector": ".experience-component.experience-bal_layouts-bal_flexible_layout:nth-of-type(2)",
+          "style": null,
+          "blocks": ["cards-product"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Hero FW26",
+          "selector": ".experience-component.experience-bal_layouts-bal_mainslider:nth-of-type(2)",
+          "style": null,
+          "blocks": ["hero-fullbleed"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Balmain Culture",
+          "selector": ".experience-component.experience-bal_layouts-bal_culture_layout",
+          "style": null,
+          "blocks": ["carousel-product"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-7",
+          "name": "Newsletter Signup",
+          "selector": ".experience-component.experience-bal_assets-bal_newslatter_singup",
+          "style": null,
+          "blocks": ["form"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-8",
+          "name": "Info Cards",
+          "selector": ".experience-component.experience-bal_assets-bal_reinsurance",
+          "style": null,
+          "blocks": ["cards-product"],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

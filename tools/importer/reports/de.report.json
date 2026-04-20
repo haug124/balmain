@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://de.balmain.com/de",
+  "path": "de",
+  "timestamp": "2026-04-20T20:06:43.623Z",
+  "title": "Die offizielle Website von Balmain Deutschland | Designerkleidung & Taschen",
+  "template": "balmain-homepage",
+  "blocks": [
+    "hero-fullbleed",
+    "hero-fullbleed",
+    "cards-product",
+    "cards-product",
+    "carousel-product",
+    "carousel-product",
+    "form"
+  ]
+}

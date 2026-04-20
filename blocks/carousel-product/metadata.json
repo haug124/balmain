@@ -1,0 +1,38 @@
+{
+  "variantName": "carousel-product",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-04-20T19:32:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://de.balmain.com/de",
+    "originPage": "Balmain Germany homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "product-category",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + subtitle + heading + CTAs per slide",
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product category carousels",
+      "collection showcase sliders",
+      "editorial content sliders"
+    ],
+    "notSuitableFor": [
+      "image-only galleries",
+      "text-only announcement bars"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/balmain-home"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-20T19:32:00.000Z"
+  }
+}

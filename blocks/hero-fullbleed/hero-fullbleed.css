@@ -1,0 +1,98 @@
+/* Hero Fullbleed — Balmain collection hero banner
+ * Full-width image with overlaid heading and CTA at bottom-left
+ */
+
+.hero-fullbleed-container .hero-fullbleed-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-fullbleed {
+  position: relative;
+  min-height: 450px;
+  overflow: hidden;
+}
+
+.hero-fullbleed > div:first-child {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-fullbleed picture {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-fullbleed img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-fullbleed > div:last-child {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-height: 450px;
+  padding: 20px;
+}
+
+.hero-fullbleed h2 {
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--text-color);
+  margin: 0 0 10px;
+  max-width: none;
+}
+
+.hero-fullbleed p {
+  margin: 0 0 8px;
+}
+
+.hero-fullbleed a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 8px 24px;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  text-decoration: none;
+  background: transparent;
+  transition: var(--button-transition);
+}
+
+.hero-fullbleed a:hover {
+  background-color: var(--text-color);
+  border-color: var(--text-color);
+  color: var(--background-color);
+  opacity: 1;
+}
+
+.hero-fullbleed.no-image > div:last-child {
+  min-height: auto;
+  padding: 40px 20px;
+}
+
+.hero-fullbleed.no-image h2,
+.hero-fullbleed.no-image p {
+  color: var(--text-color);
+}
+
+@media (width >= 900px) {
+  .hero-fullbleed {
+    min-height: 600px;
+  }
+
+  .hero-fullbleed > div:last-child {
+    min-height: 600px;
+    padding: 30px 40px;
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-product",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-04-20T19:32:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://de.balmain.com/de",
+    "originPage": "Balmain Germany homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "product-category",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + subtitle + heading + CTAs",
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product category grids",
+      "collection showcase cards",
+      "image cards with subtitle and heading"
+    ],
+    "notSuitableFor": [
+      "text-only info cards",
+      "small icon-based feature cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/balmain-home"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-20T19:32:00.000Z"
+  }
+}
